@@ -1,0 +1,28 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<style>
+    body{
+    background-image:url("static/s.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    }
+    a{
+    color:white;
+    text-decoration:none;
+    }
+</style>
+<body>
+<h1 style="color:red;">School</h1>
+<a class="btn btn-success" href="{%url 'addschool'%}">School</a> <br>
+<a class="btn btn-danger" href="{%url 'addstudent'%}">Student</a>
+</body>
+</html>
