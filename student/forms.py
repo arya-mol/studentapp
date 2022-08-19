@@ -13,6 +13,10 @@ class StudentForm(ModelForm):
             # "school_name": forms.TextInput(attrs={"class": "form-control"})
 
         }
+    def __init__(self,*args,**kwargs):
+        super(StudentForm,self).__init__(*args,**kwargs)
+        self.fields['school_name'].empty_label="Select School"
+
 
 
 class SchoolForm(ModelForm):
